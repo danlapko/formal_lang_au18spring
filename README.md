@@ -1,4 +1,6 @@
 ## Ubuntu installation
+Install through "sudo ./install.sh" command or do it manually:
+
 Install **ANTLR4** :
 ```
 $ cd /usr/local/lib
