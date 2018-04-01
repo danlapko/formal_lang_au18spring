@@ -1,5 +1,5 @@
 ## Ubuntu installation
-Install through "sudo ./install.sh" command or do it manually:
+Install and build through "sudo ./install.sh" command or do it manually:
 
 Install **ANTLR4** :
 ```
@@ -22,7 +22,7 @@ antlr4 -Dlanguage=Python3 L.g4
 ```
 
 ## Running the lexer
-run.py will read L-program file and produce lexems as output
+run.py will read L-program file and produce lexems to stdout
 Example:
 ```
 python3 run.py ./test/correct/minus_mult.l

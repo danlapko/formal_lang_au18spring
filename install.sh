@@ -6,3 +6,4 @@ alias antlr4='java -jar /usr/local/lib/antlr-4.6-complete.jar'
 alias grun='java org.antlr.v4.gui.TestRig'
 cd -
 pip3 install -r requirements.txt
+antlr4 -Dlanguage=Python3 L.g4
