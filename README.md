@@ -33,6 +33,6 @@ python3 run.py ./test/correct/minus_mult.l
 ```
 
 ## Tests
- - */correct* test program to test all key words and some corner cases
- - */incorrect* test that invalid syntax are cause syntax error
+ - */correct* contains test programs to test all key words and some corner cases
+ - */incorrect* test programs test that invalid syntax cause syntax error
  (attention! some syntax may look like invalid but be valid in real: "12ab" == FLOATING(12)  ID(ab))
