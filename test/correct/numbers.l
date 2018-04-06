@@ -1,4 +1,3 @@
-
 0
 -0
 write 0.011005e+5
@@ -18,10 +17,11 @@ write y/x// comment
 y % x % 6
 y%x%6
 
+while (x:=1//)
 
 (((x + 1) * 5) - 6123) / 9;
 
-if (x > -10.0) && x < 1e5*   500
+if (x > -10.0) && x < 1e5*  500
 then write -.5
 else write 0.000
 

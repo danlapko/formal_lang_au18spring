@@ -22,6 +22,7 @@ FLOATING
 OPEN_PAREN : '(';
 CLOSE_PAREN : ')';
 COLON : ';';
+ASSIGN : ':=';
 ADD : '+';
 SUB : '-';
 MUL : '*';

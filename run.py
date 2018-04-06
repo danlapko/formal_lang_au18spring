@@ -12,7 +12,7 @@ def end_of_token_position(start_line, start_column, text):
     end_column = len(lines[-1]) - 1
 
     if end_line == start_line:
-        end_line += start_column
+        end_column += start_column
 
     return end_line, end_column
 
@@ -35,12 +35,15 @@ def output(lexer):
             text = float(text)
 
         if last_line != tok_start_line:
+
+            if last_line > -1:
+                print()
+            print(str(tok_start_line) + ") ", end="")
             last_line = tok_start_line
-            print("\n" + str(last_line) + ") ", end="")
 
         print('{name}({text}, [{st_line},{st_col}] .. [{end_line},{end_col}])'.format(
             name=token_name,
-            text="'"+text+"'" if token_name!= "FLOATING" else text,
+            text="'" + text + "'" if token_name != "FLOATING" else text,
             st_line=tok_start_line,
             st_col=tok_start_column,
             end_line=tok_end_line,
