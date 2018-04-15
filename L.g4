@@ -25,6 +25,7 @@ COLON : ';';
 ASSIGN : ':=';
 ADD : '+';
 SUB : '-';
+POW : '**';
 MUL : '*';
 DIV : '/';
 MOD : '%';
@@ -39,6 +40,7 @@ OR : '||';
 
 
 COMMENT : '//' ~[\r\n]* -> channel(HIDDEN);
+ML_COMMENT : '/*' (ML_COMMENT|.)*? '*/' -> channel(HIDDEN) ;
 
 SKIP_ : (SPACE | LINEBREAK) -> skip;
 
